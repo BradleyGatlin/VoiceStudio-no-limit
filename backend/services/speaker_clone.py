@@ -30,7 +30,7 @@ import soundfile as sf
 logger = logging.getLogger("omnivoice.speaker_clone")
 
 MIN_REF_DURATION_S = 5.0   # below this the clone is thin and unstable
-MAX_REF_DURATION_S = 15.0  # above this is just wasted reference context
+MAX_REF_DURATION_S = 300.0  # above this is just wasted reference context
 IDEAL_REF_DURATION_S = 8.0  # target window — long enough for prosody, short enough for coverage
 
 # Per-segment clone refs (Wave 3.2): cutting a reference from a single
